@@ -21,7 +21,7 @@ def build_agent():
         logger.warning("GROQ_API_KEY not found in environment.")
         
     llm = ChatGroq(
-        model="openai/gpt-oss-120b", 
+        model="meta-llama/llama-4-scout-17b-16e-instruct", 
         temperature=0,
         groq_api_key=api_key
     )
